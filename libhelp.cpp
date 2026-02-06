@@ -1,9 +1,7 @@
 #include <iostream>
-#include <string>
 #include "libhelp.h"
-
 using namespace std;
-/*void gethelp ()
+void gethelp ()
 {
     const char* author_ptr = std::getenv ("Author");
     const char* version_ptr = std::getenv ("Version");\
@@ -29,26 +27,3 @@ using namespace std;
     }
     cout << "Author: " <<  Author << "\n" << "Version: " << Version << "\n";
 }
-*/
-
-int main (int argc , char* argv[])
-{
-    bool needHelp = false;
-
-    for (int i = 0; i < argc; i++)
-    {
-        string arg = argv[i];
-        if ( arg == "--help")
-        {
-            needHelp = true;    
-        }
-        cout << "arg" << i << ": " << argv[i] << endl;
-    }
-    if (needHelp)
-    {
-        gethelp();
-    }
-    return 0;
-}
-
-
