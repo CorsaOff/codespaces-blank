@@ -4,7 +4,7 @@
 
 void printQueue (std::queue <int> q , const std::string& label)
 {
-    std::cout<<label<<" [";
+    std::cout<<label<<" [ ";
     bool first = true;
     while (!q.empty())
     {
@@ -48,7 +48,7 @@ class Graph
         {
             printQueue (q,"asdasd");
         }
-        std::cout << "посещенные вершины";
+        std::cout << " посещенные вершины ";
         int step = 1;
         int level = 0;
 
